@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.navbar
+{
+    width: 100%;
+    display: flex;
+    height: auto;
+    overflow: hidden;  
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    width: 210px;
+    height: 30px;
+    margin-left: 5%;
+}
+.list{
+    display: flex; 
+    list-style: none;
+    cursor: pointer; 
+    height: 70px;
+    gap: 24px; 
+    /* padding-top: 40px;  */
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    size: 14px;
+}
+.shop{
+    display: flex;
+    padding-left: 60px;
+    /* padding-top: 40px; */
+    align-items: center;
+    /* justify-content: center; */
+    height: 70px;
+    list-style: none;
+    cursor: pointer;
+}
+.humburger{
+    z-index: 2;
+    position: absolute;
+    top: 28.8px;
+    right: 50px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+.hamburger span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 2px 0;
+    background: white;
+    transform-origin: center center;
+    transition: all 0.2s linear 0.1s;
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+.bg-img{
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.buttons{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    top: 390px;
+    left: 105px;
+    width: 150px;
+    height: 50px;
+}    
+.img-1{
+    background-image: url(moon.jpg);
+    overflow: hidden;  
+}
+.navbar2{
+    position: relative;
+    top: 381px;
+    left: 7%;
+}
+.img-2{
+    background-image: url(./starlink\ mission1.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;  
+}
+.navbar3{
+    position: relative;
+    top: 381px;
+    left: 7%;
+}
+.img-3{
+    background-image: url(./dragon\ and\ crew.jpg);
+    overflow: hidden;  
+}
+.navbar4{
+    position: relative;
+    top: 381px;
+    left: 7%;
+}
+.img-4{
+    background-image: url(./starship.jpg);
+    overflow: hidden;   
+}
+.navbar5{
+    position: relative;
+    top: 381px;
+    left: 7%;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    height: 80px;
+    color: white;
+    gap: 20px;
+}
+#togglemenu{
+    width: 22px;
+    height: 22px;
+    margin-left: 40px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+#togglebtn{
+    
+    margin-left: -13%;
+    margin-top: 9%;
+    width: 25px;
+    height: 30px;
+}
+p{  
+    font-size: 20px;
+    margin: 0%;
+    width: 300px;
+}
+h1{ 
+    display: inline;
+    font-size: 48px;
+    margin: 0%;
+    width: 150px;
+}
+@media(max-width: 1456px) {
+    .list{
+        display: none;
+    }
+    .shop{
+        display: none;
+    }
+    .logo{
+        display: flex;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding-right: 20PX;
+    }
+}
+tr th #mobilenav{
+    color: white;
+     background-color: black;
+    border-bottom: solid .2px gray;
+}
